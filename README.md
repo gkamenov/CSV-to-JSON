@@ -1,5 +1,5 @@
 # CSV-to-JSON
-Simple javascript function to convert CSV into JSON. It will respect double quotes and new line characters within quoted fields. Empty rows are ommited. All fields in resulting JSON are strings.
+Simple javascript function to convert CSV into JSON. It will respect double quotes and new line characters within quoted fields. Empty rows are omitted. All fields in resulting JSON are of type string.
 First parameter is string containgin CSV text, second parameter is symbol for separator, by default ";". 
 There is no separator autodetection or guessing type of data implemented.
 
