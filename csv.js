@@ -12,7 +12,7 @@ function csvToJSON(csv, separator) {
                     quotas = !quotas;
                 break;
             case separator:
-                !quotas && separator == csv[i] ? (row[String.fromCharCode(field++)] = cell, cell = '') : (cell += csv[i]);
+                !quotas ? (row[String.fromCharCode(field++)] = cell, cell = '') : (cell += csv[i]);
                 break;
             case '\r':
                 quotas && (cell += csv[i]) && this.break;
